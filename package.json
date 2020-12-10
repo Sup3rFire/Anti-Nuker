@@ -11,6 +11,8 @@
   "dependencies": {
     "discord.js": "^12.4.0",
     "dotenv": "^8.2.0",
+    "ms": "^2.1.2",
+    "pretty-ms": "^7.0.1",
     "@keyv/sqlite": "^2.0.2",
     "keyv": "^4.0.1"
   }

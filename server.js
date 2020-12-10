@@ -17,6 +17,17 @@ client.color = "#FF6464";
 client.prefix = ['.'];
 client.developers = ['337024000330956811'];
 
+// Anti Nuker Setup
+
+client.recentBan = new Discord.Collection();
+client.recentKick = new Discord.Collection();
+client.antiNuke = new Keyv(`sqlite://db/antiNuke.sqlite`);
+client.antiNuke.on('error', err => console.error('Anti Nuke Keyv connection error:', err));
+
+client.actions = require('./action.js');
+
+// Handlers
+
 fs.readdir("./events/", (err, files) => {
     if (err) return console.error(err);
     files.forEach(file => {
