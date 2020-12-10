@@ -1,6 +1,6 @@
 # discord.js Anti Nuker
 
-This template was designed to be an easy way to start off a discord.js bot with a few essential features that would probably be made anyways.
+This is a basic discord.js anti nuker
 
 ## Warning
 
